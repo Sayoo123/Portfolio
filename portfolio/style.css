@@ -50,7 +50,8 @@
     list-style-type: none;
     font-size: 1.3em;
     font-weight:bold ;
-    padding-right: 30px;
+    right: 30px;
+    height: 50px;
     
 }
 
@@ -124,7 +125,9 @@ background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(27, 27, 25) 0%, rgba(0,
     background: rgb(22, 22, 22);
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    position: relative;
+    z-index: -1;
 
 }
 
@@ -152,15 +155,16 @@ background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(27, 27, 25) 0%, rgba(0,
 
 }
 .about{
-    background:rgb(210, 205, 205,0.07);
-    top: 150px;
-    height: 84px;
-    width: 690px;
+    background:rgb(210, 205, 205,0.03);
+    top: 10px;
+    height: 500px;
+    left: 350px;
+    width: 980px;
     position: absolute;
-    font-size: 100px;
+    font-size: 250px;
     font-weight: 900;
     font-family: sans-serif;
-    
+   
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -172,6 +176,7 @@ background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(27, 27, 25) 0%, rgba(0,
     font-size: 26px;
     text-align: left;
     height: 65%;
+    
    
     
 }
@@ -180,9 +185,13 @@ background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(27, 27, 25) 0%, rgba(0,
     
     width:100%;
    height: 20%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    background: #808080;
-   
-
+}
+img{
+    height:80%;
 }
 /*------------------------------------------------------------slider------------------------------------------------------------ */
 .PROJECTS{
