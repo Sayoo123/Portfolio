@@ -6,5 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(document.getElementById('box1').getBoundingClientRect());
    
 }, false);
+// function pop()
+// {
+//     document.querySelector('.box1').classList.toggle('box1in')
+
+// }
 
 
