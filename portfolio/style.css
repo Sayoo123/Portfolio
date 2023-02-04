@@ -132,24 +132,7 @@ header{
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
-  .line{
-  height:0px;
-  width:1px;
-  border-bottom:3px solid rgb(255, 255, 255);
-  margin:auto;
-  position: relative;
-  top: 280px;
-  -webkit-animation: increase 3s;
-  -moz-animation:    increase 3s; 
-  -o-animation:      increase 3s; 
-  animation:         increase 3s; 
-  animation-fill-mode: forwards;
-  }
-  @keyframes increase {
-    100% {
-        width: 500px;
-    }
-}
+  
 
 /*  --------------------------------------------------------------ABOUT---------------------------------------------------------*/
 .ABOUT{
@@ -347,6 +330,105 @@ header{
     transform: scale(1.05);
    
 }
+.contact{
+    background-color:  #e9d2f0;
+    /* background-image: url(/portfolio/assets/contact.png); */
+    display: flex;
+}
+
+.leftc{
+    width: 50%;
+ 
+}
+.rightc{
+    width: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto 0; */
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    font-family:'Poppins',sans-serif;
+}
+.bell{
+    top:10%;
+    position: relative;
+    width:80%;
+    height:65%;
+    margin: 0 auto;
+     display: flex;
+}
+.inputBox{
+ position: relative;
+ width: 250px;
+ height: fit-content;
+}
+ .inputBox input{
+ width: 100%;
+ padding: 10px;
+ border: 1px solid rgb(165, 159, 159);
+ background:#e9d2f0;
+
+ border-radius: 5px;
+ outline: none;
+ color:rgb(3, 3, 3);
+ font-size: 1em;
+ }
+.inputBox span{  
+ position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color :rgba(7, 7, 7, 0.85);
+  text-transform: uppercase;
+  transition: 0.5s;
+  
+}
+.inputBox input:valid ~ span,
+ .inputBox input:focus ~ span{
+  color:#00dfc4;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.79em;
+   padding: 0 10px;
+  background:#e9d2f0;
+  border-left:1px solid #00dfc4;
+  border-right: 1px solid#00dfc4;
+  letter-spacing: 0.2em; 
+  width: fit-content;
+  height:10px;
+}
+.inputBox:nth-child(1) input:valid ~ span,
+ .inputBox:nth-child(1) input:focus ~ span,.inputBox:nth-child(3) input:valid ~ span,
+ .inputBox:nth-child(3) input:focus ~ span{
+
+    font-family:'Poppins',sans-serif;
+    
+ } 
+.inputBox input:valid,
+ .inputBox input:focus {
+    border:1px solid #00dfc4;
+ }
+ .inputBox:nth-child(2) input:valid ~ span,
+ .inputBox:nth-child(2) input:focus ~ span{
+
+     background: #00dfc4;
+     color:#1d2b3a ;
+     border-radius: 2px ;
+     height: fit-content;
+ } 
+ .inputBox:nth-child(4) input:valid ~ span,
+ .inputBox:nth-child(4) input:focus ~ span{
+
+     background: #00dfc4;
+     color:#1d2b3a ;
+     border-radius: 2px ;
+     height: fit-content;
+ } 
+
+
+
 /*------------------------------------------------------------responsive------------------------------------------------------------ */
 @media only screen and (max-width: 500px){
     .hero{
