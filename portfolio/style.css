@@ -330,26 +330,63 @@ header{
     transform: scale(1.05);
    
 }
+/*----------------------------------------------------------------- contact ----------------------------------------------------------*/
 .contact{
     background-color:  #e9d2f0;
+    height: 90%;
     /* background-image: url(/portfolio/assets/contact.png); */
     display: flex;
+    overflow: hidden;
+    
 }
 
+  
+  
+  
 .leftc{
-    width: 50%;
- 
-}
-.rightc{
-    width: 50%;
+    
+    
     width: 50%;
     display: flex;
     flex-direction: column;
     /* margin: auto 0; */
-    align-items: center;
-    justify-content: center;
+    margin-left: 4%;
+    margin-top: 5%;
+    height: 80%;
+    /* justify-content: center;
+    align-items: center; */
     gap:30px;
     font-family:'Poppins',sans-serif;
+}
+.rightc{
+    width: 50%;
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    height: 80%;
+   
+}
+.head{
+    padding-top: 10px;
+    width:450px;
+    height:50px;
+    left:0;
+    font-weight: bolder;
+    font-size:60px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.pp{
+    padding-top: 15px;
+    width:350px;
+    height:70px;
+    font-size: large;
+    font-weight: 500;
+    left:10px;
+    position: relative;
+
 }
 .bell{
     top:10%;
@@ -361,10 +398,10 @@ header{
 }
 .inputBox{
  position: relative;
- width: 250px;
+ width: 450px;
  height: fit-content;
 }
- .inputBox input{
+ .inputBox input,.inputBox textarea {
  width: 100%;
  padding: 10px;
  border: 1px solid rgb(165, 159, 159);
@@ -387,7 +424,8 @@ header{
   
 }
 .inputBox input:valid ~ span,
- .inputBox input:focus ~ span{
+ .inputBox input:focus ~ span,.inputBox textarea:valid ~ span,
+ .inputBox textarea:focus ~ span{
   color:#00dfc4;
   transform: translateX(10px) translateY(-7px);
   font-size: 0.79em;
@@ -397,17 +435,17 @@ header{
   border-right: 1px solid#00dfc4;
   letter-spacing: 0.2em; 
   width: fit-content;
-  height:10px;
+  height: fit-content;
 }
 .inputBox:nth-child(1) input:valid ~ span,
  .inputBox:nth-child(1) input:focus ~ span,.inputBox:nth-child(3) input:valid ~ span,
  .inputBox:nth-child(3) input:focus ~ span{
 
-    font-family:'Poppins',sans-serif;
+    font-weight: bolder;
     
- } 
+} 
 .inputBox input:valid,
- .inputBox input:focus {
+ .inputBox input:focus{
     border:1px solid #00dfc4;
  }
  .inputBox:nth-child(2) input:valid ~ span,
@@ -416,7 +454,7 @@ header{
      background: #00dfc4;
      color:#1d2b3a ;
      border-radius: 2px ;
-     height: fit-content;
+     
  } 
  .inputBox:nth-child(4) input:valid ~ span,
  .inputBox:nth-child(4) input:focus ~ span{
@@ -424,8 +462,18 @@ header{
      background: #00dfc4;
      color:#1d2b3a ;
      border-radius: 2px ;
-     height: fit-content;
+     
  } 
+ /* ------------------------------------------------------footer ----------------------------------------------------*/
+ .footer {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: #e9d2f0;
+    
+   
+ 
+  }
 
 
 
