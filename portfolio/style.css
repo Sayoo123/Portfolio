@@ -317,18 +317,11 @@
     background-size: cover;
 
 }
-.box1:hover{
+.box1:hover,.box3:hover,.box2:hover{
     transform: scale(1.05);
-   
+   cursor: pointer;
 }
-.box2:hover{
-    transform: scale(1.05);
-   
-}
-.box3:hover{
-    transform: scale(1.05);
-   
-}
+
 /*----------------------------------------------------------------- contact ----------------------------------------------------------*/
 .contact{
     background-color:  #e9d2f0;
@@ -417,7 +410,7 @@
   font-size: 1em;
   color :rgba(7, 7, 7, 0.85);
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.4s;
   
 }
 .inputBox input:valid ~ span,
@@ -434,43 +427,73 @@
   width: fit-content;
   height: fit-content;
 }
-.inputBox:nth-child(1) input:valid ~ span,
+ /* .inputBox:nth-child(1) input:valid ~ span,
  .inputBox:nth-child(1) input:focus ~ span,.inputBox:nth-child(3) input:valid ~ span,
  .inputBox:nth-child(3) input:focus ~ span{
 
     font-weight: bolder;
     
-} 
+}  */
 .inputBox input:valid,
  .inputBox input:focus{
     border:1px solid #00dfc4;
  }
- .inputBox:nth-child(2) input:valid ~ span,
+ #review textarea:valid ~ span,
+ #review textarea:focus ~ span{
+    border:2px solid #00dfc4;
+    background: #00dfc4;
+    color:#1d2b3a ;
+    border-radius: 2px ;
+
+ }
+ 
+ /* .inputBox:nth-child(2) input:valid ~ span,
  .inputBox:nth-child(2) input:focus ~ span{
 
      background: #00dfc4;
      color:#1d2b3a ;
      border-radius: 2px ;
      
- } 
- .inputBox:nth-child(4) input:valid ~ span,
+ }  */
+ /* .inputBox:nth-child(4) input:valid ~ span,
  .inputBox:nth-child(4) input:focus ~ span{
 
      background: #00dfc4;
      color:#1d2b3a ;
      border-radius: 2px ;
      
- } 
+ }  */
+ #email input:valid ~ span,
+ #email input:focus ~ span, #firstname input:valid ~ span,
+ #firstname input:focus ~ span,#Lastname input:valid ~ span,
+ #Lastname input:focus ~ span,#contact input:valid ~ span,
+ #contact input:focus ~ span
+{
+    background: #00dfc4;
+     color:#1d2b3a ;
+     border-radius: 2px ;
+ }
+ /* #firstname input:valid ~ span,
+ #firstname input:focus ~ span{
+    background: #00dfc4;
+     color:#1d2b3a ;
+     border-radius: 2px ;
+    
+ } */
  /* ------------------------------------------------------footer ----------------------------------------------------*/
  .footer {
     position: absolute;
     width: 100%;
     height: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: #e9d2f0;
-    
-   
- 
-  }
+}
+.faceboox,.instagram,.linkedin,.github{
+    width:fit-content;
+    position: relative;
+}
 
 
 
