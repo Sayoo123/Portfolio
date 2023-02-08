@@ -298,7 +298,7 @@
 }
 
 .box1{
-    background-image: url("/portfolio/assets/box1.jpg");
+    background-image: url("/assets/box1.jpg");
     position: relative;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -308,12 +308,12 @@
    
 }
 .box2{
-    background-image: url("/portfolio/assets/box2.png");
+    background-image: url("/assets/box2.png");
     background-size: cover;
 
 }
 .box3{
-    background-image: url("/portfolio/assets/box3.jpg");
+    background-image: url("/assets/box3.jpg");
     background-size: cover;
 
 }
@@ -325,11 +325,12 @@
 /*----------------------------------------------------------------- contact ----------------------------------------------------------*/
 .contact{
     background-color:  #e9d2f0;
-    height: 90%;
+    height: 92%;
     /* background-image: url(/portfolio/assets/contact.png); */
     display: flex;
+    z-index: -2;
     overflow: hidden;
-   
+    position: relative;
     
 }
 .leftc{
@@ -339,15 +340,18 @@
     display: flex;
     flex-direction: column;
     /* margin: auto 0; */
-    margin-left: 4%;
-    margin-top: 5%;
+    margin-left: 7.5%;
+    margin-top: 6.5%;
     height: 80%;
+    z-index: 1;
+    /* background-color: white; */
     /* justify-content: center;
     align-items: center; */
     gap:30px;
     font-family:'Poppins',sans-serif;
 }
 .rightc{
+    margin-top:2.2% ;
     width: 50%;
     display: flex;
     gap:30px;
@@ -480,20 +484,101 @@
      border-radius: 2px ;
     
  } */
+ .leftshade{
+    z-index: -1;
+    position: absolute;
+    background-color: rgb(255, 255, 255,.15);
+    width: 530px;
+    height: 515px;
+    top: 15.2%;
+    left: 4.7%;
+    border-radius: 20px;
+ }
+ .rightshade{
+    z-index: -1;
+    position: absolute;
+    background-color: rgb(255, 255, 255,.15);
+    width: 600px;
+    height: 485px;
+    top: 15.2%;
+    right: 3.5%;
+    border-radius: 20px;
+ }
+ 
  /* ------------------------------------------------------footer ----------------------------------------------------*/
  .footer {
     position: absolute;
+    z-index: 1;
     width: 100%;
-    height: 10%;
+    height:8.7%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    overflow: hidden;
     background-color: #e9d2f0;
+    
 }
-.faceboox,.instagram,.linkedin,.github{
-    width:fit-content;
+.facebook,.instagram,.linked,.github{
+    width:4.3%;
     position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+   
+    
 }
+.linked a img{
+    width:40px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    transition: 500ms;
+}
+img{
+   
+width:45px;
+height: auto;
+position: relative;
+z-index: 10;
+transition: 500ms;
+}
+.facebook a::after,.linked a::after,.github a::after,.instagram a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:-90px;
+    background: linear-gradient(-45deg,rgb(127, 51, 152),rgb(229, 184, 244));
+    position: absolute;
+    transition: 0.5s;
+    /* border-radius: 50%; */
+
+}
+.facebook a:hover img,.github a:hover img,.instagram a:hover img,.linked a:hover img{
+    filter: brightness(0) invert(1);
+}
+.facebook a:hover::after,.github a:hover::after,.linked a:hover::after,.instagram a:hover::after{
+ top:0;
+}
+.facebook a,.instagram a,.linked a,.github a{
+    background-color: rgb(255, 255, 255,.35);
+    position: relative;
+    border-radius: 50%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.footershade
+ {
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    background-color: rgb(255, 255, 255,.45);
+    height:100%;
+    border-radius: 200px 200px 0px 0px;
+    /* border-radius: 120px; */
+ }
 
 
 
